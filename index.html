@@ -95,10 +95,16 @@
     <h2>Research Projects</h2>
 
     <article>
-        <h3>Project Name</h3>
+        <h3>zk-image-provenance (in-progress preprint)</h3>
+        <a href="https://github.com/D3cl4n/zk-image-provenance">Github Repository</a>
 
         <p>
-            Short description of the project.
+            In this project, corresponding to the first listed publication, I am investigating using zero-knowledge proofs
+            for verifying image provenance. I use a Raspberry Pi 4 with a camera module to emulate a camera that signs 
+            photos and their exifdata at capture time. The photos are then greyscaled and distributed to the verifier. I use a 
+            Halo2 zero-knowledge proof to convince the verifier that the original image (secret witness) hashes to the hash that was
+            signed and that the only tansformation applied to the original image was greyscaling. The witness verifies both the 
+            digitial signature (using the camera's verifying key) and the proof, completing the chain of trust. 
         </p>
 
         <ul>
