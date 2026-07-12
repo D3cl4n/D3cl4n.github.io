@@ -101,10 +101,10 @@
         <p>
             In this project, corresponding to the first listed publication, I am investigating using zero-knowledge proofs
             for verifying image provenance. I use a Raspberry Pi 4 with a camera module to emulate a camera that signs 
-            photos and their exifdata at capture time. The photos are then greyscaled and distributed to the verifier. I use a 
+            photos and their exifdata at capture time. The photos are then greyscaled and distributed to the verifier. This work uses a 
             Halo2 zero-knowledge proof to convince the verifier that the original image (secret witness) hashes to the hash that was
-            signed and that the only tansformation applied to the original image was greyscaling. The witness verifies both the 
-            digitial signature (using the camera's verifying key) and the proof, completing the chain of trust. 
+            signed and that the only transformation applied to the original image was greyscaling. The verifier, given the edited image and the proof,
+            verifies both the digital signature (using the camera's verifying key) and the proof, completing the chain of trust. 
         </p>
 
         <ul>
