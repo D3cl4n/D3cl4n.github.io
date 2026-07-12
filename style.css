@@ -44,6 +44,7 @@ header {
     display: block;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 
     color: #777;
     background: #f2f2f2;
