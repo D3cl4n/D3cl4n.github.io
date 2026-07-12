@@ -41,7 +41,7 @@ header {
     border: 2px solid #ccc;
     border-radius: 50%;
 
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 
