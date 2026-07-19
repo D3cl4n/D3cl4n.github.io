@@ -105,9 +105,6 @@
             Halo2 zero-knowledge proof to convince the verifier that the original image (secret witness) hashes to the hash that was
             signed and that the only transformation applied to the original image was greyscaling. The verifier, given the edited image and the proof,
             verifies both the digital signature (using the camera's verifying key) and the proof, completing the chain of trust. 
-
-            I also use a packing system where 31 byte are encoded into each finite field element (in the Pasta curve). This optimization 
-            reduces prover times, verifier times 
         </p>
 
         <ul>
