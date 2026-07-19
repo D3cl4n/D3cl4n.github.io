@@ -105,21 +105,34 @@
             Halo2 zero-knowledge proof to convince the verifier that the original image (secret witness) hashes to the hash that was
             signed and that the only transformation applied to the original image was greyscaling. The verifier, given the edited image and the proof,
             verifies both the digital signature (using the camera's verifying key) and the proof, completing the chain of trust. 
+
+            I also use a packing system where 31 byte are encoded into each finite field element (in the Pasta curve). This optimization 
+            reduces prover times, verifier times 
         </p>
 
         <ul>
-            <li>Goal</li>
-            <li>Methods</li>
-            <li>Current status</li>
+            <li>Goal: end-to-end prototype scaling to realistic image sizes</li>
+            <li>Methods: base256 encoding, Halo2, ECDSA, Poseidon</li>
+            <li>Current status: prototype finished, initial paper in progress (see above)</li>
         </ul>
     </article>
 
     <article>
-        <h3>Project Name</h3>
+        <h3>poseidon-rescue-halo2-benchmarking</h3>
 
         <p>
-            Another project description.
+            In this work I implement a shared circuit construction for the Poseidon and Rescue-Prime permutations: POSEIDON^π and Rescue-XLIX. 
+            The shared construction provides a skeleton of common parameters and functionality, thus controlling confounding variables 
+            during benchmarking. Each permutation builds on the shared construction, completing its functionality. The comparative 
+            analysis of the low-level circuit metrics highlights design differences between the permutations. I analyze how these design 
+            differences affect low-level circuit metrics in Halo2 PLONKish circuits.
         </p>
+
+        <ul>
+            <li>Goal: comparative analysis of arithmetic hash function design performance in PLONKish circuits</li>
+            <li>Methods: Poseidon, Rescue-Prime, Halo2</li>
+            <li>Current status: complete, paper published as Zenodo preprint (see above)</li>
+        </ul>
     </article>
 
 </section>
