@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KaTeX CDN Example</title>
     
-    <!-- 1. Load KaTeX CSS Core Styles (Fixed URL) -->
-    <link rel="stylesheet" href="https://jsdelivr.net" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <!-- 1. Load KaTeX CSS Core Styles from Cloudflare CDN -->
+    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-fHwaYRwG+SfGLYQLcWjKwA0cBsBY57PlHS1XUXZNJjE9m0OB+/v+UKdaKvS3N5V9Hrc19czx0r3wBMTVyK6o+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- 2. Load KaTeX JavaScript Engine (Fixed URL) -->
-    <script defer src="https://jsdelivr.net" integrity="sha384-7zkQ6969h27jAMqtgInKmrJeYaagCKFM02GsAnPc57SybNtW5Vv72Cuvaaxc8cJK" crossorigin="anonymous"></script>
+    <!-- 2. Load KaTeX JavaScript Engine -->
+    <script defer src="https://cloudflare.com" integrity="sha512-LQ9ZdaXUn6UZ7Y+0gWpD9C4uS9NisC92p80C8BskP91q35wTeqfD7L0wDdgFubwM88N9vK0Icoo6N188S01qdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- 3. Load the Auto-Render Extension (Fixed URL) -->
-    <script defer src="https://jsdelivr.net" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMPW7Xub3kuWOHxTlKvcvv7tA7Msxs8Um475bZm" crossorigin="anonymous"
+    <!-- 3. Load the Auto-Render Extension and run it once the DOM is fully loaded -->
+    <script defer src="https://cloudflare.com" integrity="sha512-iWv4ntvAsN89I20Hka9uL9BOCXcs566R9/1t9OaHh/L970Wv9Z3g8+XQfWdf2wU9C46Vww+Y94Vv3FvA==" crossorigin="anonymous" referrerpolicy="no-referrer"
         onload="renderMathInElement(document.body);"></script>
 </head>
 <body style="font-family: Arial, sans-serif; margin: 40px; line-height: 1.6;">
