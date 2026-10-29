@@ -3,86 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaTeX CDN Example</title>
+    
+    <!-- 1. Load KaTeX CSS Core Styles (Fixed URL) -->
+    <link rel="stylesheet" href="https://jsdelivr.net" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 
-    <title>Articles | Declan Murphy</title>
+    <!-- 2. Load KaTeX JavaScript Engine (Fixed URL) -->
+    <script defer src="https://jsdelivr.net" integrity="sha384-7zkQ6969h27jAMqtgInKmrJeYaagCKFM02GsAnPc57SybNtW5Vv72Cuvaaxc8cJK" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../style.css">
-
-    <style>
-        .article-entry {
-            padding: 24px 0;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .article-entry:first-of-type {
-            padding-top: 0;
-        }
-
-        .article-meta {
-            color: #777;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-        }
-
-        .article-entry h3 {
-            margin-bottom: 8px;
-        }
-
-        .article-entry h3 a {
-            color: #222;
-            text-decoration: none;
-        }
-
-        .article-entry h3 a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <!-- 3. Load the Auto-Render Extension (Fixed URL) -->
+    <script defer src="https://jsdelivr.net" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMPW7Xub3kuWOHxTlKvcvv7tA7Msxs8Um475bZm" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; margin: 40px; line-height: 1.6;">
 
-<header>
-    <div class="profile">
-        <div>
-            <h1>Declan Murphy</h1>
-            <p class="subtitle">Research Portfolio</p>
+    <h1>KaTeX Live CDN Demo</h1>
+    <p>This page loads LaTeX equations instantly without any local installation.</p>
 
-            <nav>
-                <a href="../index.html#about">About</a>
-                <a href="../index.html#research">Research</a>
-                <a href="../index.html#publications">Publications</a>
-                <a href="./">Articles</a>
-                <a href="../index.html#projects">Projects</a>
-                <a href="../index.html#contact">Contact</a>
-            </nav>
-        </div>
-    </div>
-</header>
+    <hr>
 
-<main>
-    <section>
-        <h2>Articles</h2>
+    <h3>1. Inline Math Example</h3>
+    <p>You can write math right inside your sentences. For example, the famous equation 
+       \( E = mc^2 \) shows the relationship between mass and energy. Another example is 
+       finding the hypotenuse of a triangle using \( a^2 + b^2 = c^2 \).</p>
 
-        <p>
-            Technical articles on my work in zero-knowledge proofs and their undelying mathematics. 
-        </p>
+    <h3>2. Block / Display Math Example</h3>
+    <p>For larger, more complex formulas, use the block syntax to place them on their own centered line:</p>
+    
+    $$ \int_{a}^{b} f(x) \,dx = F(b) - F(a) $$
 
-        <article class="article-entry">
-            <p class="article-meta">zk-STARKs · 2026</p>
-            <h3>
-                <a href="binary-tower-fields.html">
-                    Binary Tower Field Notes for Understanding BINIUS
-                </a>
-            </h3>
-            <p>
-                An introduction to binary fields, extension/tower fields, and examples. 
-            </p>
-        </article>
-    </section>
-</main>
+    <p>Here is another block equation showing the quadratic formula:</p>
 
-<footer>
-    <p>© 2026 Declan Murphy</p>
-</footer>
+    $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 </body>
 </html>
