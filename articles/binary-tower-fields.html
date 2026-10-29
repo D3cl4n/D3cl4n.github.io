@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LaTeX in HTML with MathJax</title>
+    <title>LaTeX in HTML with KaTeX</title>
     
-    <!-- Include the MathJax Script via CDN -->
-    <script src="https://polyfill.io"></script>
-    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
+    <!-- Include KaTeX CSS and JS -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <script defer src="https://jsdelivr.net"></script>
+    
+    <!-- Include KaTeX Auto-Render Extension (required to find delimiters automatically) -->
+    <script defer src="https://jsdelivr.net"
+        onload="renderMathInElement(document.body);"></script>
 </head>
 <body>
 
-    <h1>Rendering LaTeX with MathJax</h1>
+    <h1>Rendering LaTeX with KaTeX</h1>
 
-    <!-- 1. Inline Math (Uses \( ... \)) -->
-    <p>This is an example of an inline equation: \( e^{i\pi} + 1 = 0 \), embedded directly in text.</p>
+    <!-- Inline Math (Uses \( ... \)) -->
+    <p>Inline example: \( a^2 + b^2 = c^2 \)</p>
 
-    <!-- 2. Block/Display Math (Uses $$ ... $$) -->
-    <p>This is a block equation displayed on its own line:</p>
-    $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+    <!-- Block/Display Math (Uses $$ ... $$ or \[ ... \]) -->
+    <p>Block example:</p>
+    $$ \int_{a}^{b} f(x) \, dx $$
 
 </body>
 </html>
