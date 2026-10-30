@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KaTeX CDN Example</title>
-    
-    <!-- 1. Load KaTeX CSS Core Styles -->
-    <link rel="stylesheet" href="https://jsdelivr.net" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css" integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG" crossorigin="anonymous">
 
-    <!-- 2. Load KaTeX JavaScript Engine -->
-    <script defer src="https://jsdelivr.net" integrity="sha384-7zkQ6969h27jAMqtgInKmrJeYaagCKFM02GsAnPc57SybNtW5Vv72Cuvaaxc8cJK" crossorigin="anonymous"></script>
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js" integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE" crossorigin="anonymous"></script>
 
-    <!-- 3. Load the Auto-Render Extension (Configured to scan the body on load) -->
-    <script defer src="https://jsdelivr.net" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMPW7Xub3kuWOHxTlKvcvv7tA7Msxs8Um475bZm" crossorigin="anonymous"
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
-</head>
+  </head>
 <body style="font-family: Arial, sans-serif; margin: 40px; line-height: 1.6;">
 
     <h1>KaTeX Live CDN Demo</h1>
