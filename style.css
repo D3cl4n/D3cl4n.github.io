@@ -12,15 +12,15 @@ body {
                  Arial,
                  sans-serif;
 
-    color: #ffffff;
-    background: #ffffff;
+    color: #222;
+    background: #fafafa;
 
     line-height: 1.7;
 }
 
 header {
     border-bottom: 1px solid #ddd;
-    background: rgb(84, 73, 127);
+    background: white;
 }
 
 .profile {
